@@ -12,4 +12,8 @@ describe 'is_prime?' do
   it 'Accepts a number and returns true if the number is prime' do
     expect(is_prime?(29)).to eq false
   end
+
+  it 'Returns false if the number given is 1' do
+    expect(is_prime?(1)).to eq false
+  end
 end

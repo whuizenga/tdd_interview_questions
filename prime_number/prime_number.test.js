@@ -25,10 +25,10 @@ describe('Math.isPrime', () => {
 
   it('throws an error when supplied with an undefined value', () => {
     const notPrime = Math.isPrime(undefined)
-    expect(notPrime).toThrowError('undefined')
+    expect(notPrime).toThrowError(/undefined/)
   })
   it('throws an error when supplied with an null value', () => {
     const notPrime = Math.isPrime(null)
-    expect(notPrime).toThrowError('undefined')
+    expect(notPrime).toThrowError(/undefined/)
   })
 })
